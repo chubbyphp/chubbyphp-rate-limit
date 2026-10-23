@@ -20,7 +20,7 @@
     ],
     "require": {
         "php": "^8.3",
-        "chubbyphp/chubbyphp-http-exception": "^1.3.4",
+        "chubbyphp/chubbyphp-http-exception": "^1.3.5",
         "psr/clock": "^1.0",
         "psr/http-message": "^1.1|^2.0",
         "psr/http-server-handler": "^1.0.2",
@@ -29,21 +29,21 @@
     },
     "require-dev": {
         "chubbyphp/chubbyphp-dev-helper": "dev-master",
-        "chubbyphp/chubbyphp-laminas-config-factory": "^1.5.3",
-        "chubbyphp/chubbyphp-mock": "^2.2.2",
-        "infection/infection": "^0.35.4",
+        "chubbyphp/chubbyphp-laminas-config-factory": "^1.5.5",
+        "chubbyphp/chubbyphp-mock": "^2.2.5",
+        "infection/infection": "^0.35.8",
         "nyholm/psr7": "^1.8.2",
         "php-coveralls/php-coveralls": "^2.9.1",
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan": "^2.2.13",
-        "phpunit/phpunit": "^12.5.34",
-        "symfony/lock": "^7.4.18|^8.1.6"
+        "phpstan/phpstan": "^2.3.1",
+        "phpunit/phpunit": "^12.5.40",
+        "symfony/lock": "^7.4.21|^8.1.9"
     },
     "suggest": {
-        "chubbyphp/chubbyphp-laminas-config-factory": "^1.5.3",
-        "chubbyphp/chubbyphp-trusted-proxy": "^1.1.2",
-        "symfony/cache": "^7.4.18|^8.1.6",
-        "symfony/lock": "^7.4.18|^8.1.6"
+        "chubbyphp/chubbyphp-laminas-config-factory": "^1.5.5",
+        "chubbyphp/chubbyphp-trusted-proxy": "^1.1.3",
+        "symfony/cache": "^7.4.21|^8.1.9",
+        "symfony/lock": "^7.4.21|^8.1.9"
     },
     "autoload": {
         "psr-4": { "Chubbyphp\\RateLimit\\": "src/" }

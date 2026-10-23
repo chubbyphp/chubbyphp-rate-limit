@@ -26,7 +26,7 @@ A minimal rate limiting middleware for PSR 15, built on [symfony/rate-limiter][6
 ## Requirements
 
  * php: ^8.3
- * [chubbyphp/chubbyphp-http-exception][9]: ^1.3.4
+ * [chubbyphp/chubbyphp-http-exception][9]: ^1.3.5
  * [psr/clock][10]: ^1.0
  * [psr/http-message][2]: ^1.1|^2.0
  * [psr/http-server-handler][3]: ^1.0.2
@@ -35,10 +35,10 @@ A minimal rate limiting middleware for PSR 15, built on [symfony/rate-limiter][6
 
 ## Suggest
 
- * [chubbyphp/chubbyphp-laminas-config-factory][5]: ^1.5.3
- * [chubbyphp/chubbyphp-trusted-proxy][7]: ^1.1.2
- * [symfony/cache][11]: ^7.4.18|^8.1.6
- * [symfony/lock][12]: ^7.4.18|^8.1.6
+ * [chubbyphp/chubbyphp-laminas-config-factory][5]: ^1.5.5
+ * [chubbyphp/chubbyphp-trusted-proxy][7]: ^1.1.3
+ * [symfony/cache][11]: ^7.4.21|^8.1.9
+ * [symfony/lock][12]: ^7.4.21|^8.1.9
 
 ## Installation
 
