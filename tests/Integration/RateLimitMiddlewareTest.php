@@ -65,7 +65,9 @@ final class RateLimitMiddlewareTest extends TestCase
 
         self::assertSame('0', $response2->getHeaderLine('RateLimit-Remaining'));
         self::assertGreaterThan(0, (int) $response2->getHeaderLine('RateLimit-Reset'));
-        self::assertLessThanOrEqual(60, (int) $response2->getHeaderLine('RateLimit-Reset'));
+        // symfony/rate-limiter (since 7.4.22 / 8.1.10) rounds the end of the window up to the full second, so the reset
+        // can exceed the interval by a second
+        self::assertLessThanOrEqual(61, (int) $response2->getHeaderLine('RateLimit-Reset'));
 
         try {
             $middleware->process($byHeader, $handler);
@@ -78,7 +80,7 @@ final class RateLimitMiddlewareTest extends TestCase
             self::assertSame(2, $data['limit']);
             self::assertSame(0, $data['remaining']);
             self::assertGreaterThan(0, $data['reset']);
-            self::assertLessThanOrEqual(60, $data['reset']);
+            self::assertLessThanOrEqual(61, $data['reset']);
             self::assertSame($data['reset'], $data['retryAfter']);
         }
 

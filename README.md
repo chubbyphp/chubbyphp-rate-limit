@@ -31,7 +31,7 @@ A minimal rate limiting middleware for PSR 15, built on [symfony/rate-limiter][6
  * [psr/http-message][2]: ^1.1|^2.0
  * [psr/http-server-handler][3]: ^1.0.2
  * [psr/http-server-middleware][4]: ^1.0.2
- * [symfony/rate-limiter][6]: ^7.4.18|^8.1.6
+ * [symfony/rate-limiter][6]: ^7.4.22|^8.1.10
 
 ## Suggest
 
